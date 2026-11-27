@@ -9,27 +9,12 @@
 </head>
 <body>
 <p><strong>This is a test fixture. Quorvane Lantern Hall is invented: there is no such place, event or organisation, and nothing here can be bought or booked.</strong></p>
-<nav id="menu"></nav>
+<nav><ul><li><a href="/events/">Events</a></li><li><a href="/events/lantern-night/">Lantern Night</a></li><li><a href="/visit/">Visit</a></li><li><a href="/workshops/">Workshops</a></li><li><a href="/opening-hours/">Opening hours</a></li><li><a href="/map-room/">Map room</a></li></ul></nav>
 <main>
 <h1>Quorvane Lantern Hall</h1>
 <p>The hall is an imaginary room where paper lanterns are folded, painted and hung from a ceiling that was never built. Visitors who do not exist arrive in the early evening, take a seat on long wooden benches and watch the colours change as the candles are replaced with small electric lamps.</p>
 <p>The collection holds round lanterns, square lanterns and a few shaped like boats, pears and sleeping cats. Each one is described on a card written in plain words, saying which paper was chosen, how the frame was bent and how long the glue needed to dry before anyone dared to lift it.</p>
 <p>Quiet mornings are kept for folding practice. Afternoons are for painting, and the last hour of the day is for tidying the tables, sorting the offcuts by colour and sweeping the floor.</p>
 </main>
-<script>
-(function () {
-  var pages = [["/events/", "Events"], ["/events/lantern-night/", "Lantern Night"], ["/visit/", "Visit"], ["/workshops/", "Workshops"], ["/opening-hours/", "Opening hours"], ["/map-room/", "Map room"]];
-  var list = document.createElement("ul");
-  pages.forEach(function (page) {
-    var item = document.createElement("li");
-    var link = document.createElement("a");
-    link.setAttribute("href", page[0]);
-    link.textContent = page[1];
-    item.appendChild(link);
-    list.appendChild(item);
-  });
-  document.getElementById("menu").appendChild(list);
-})();
-</script>
 </body>
 </html>
